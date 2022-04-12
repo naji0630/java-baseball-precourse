@@ -1,7 +1,5 @@
 # 숫자 야구 게임
-## 진행 방법
-* 숫자 야구 게임 요구사항을 파악한다.
-* 요구사항에 대한 구현을 완료한 후 자신의 github 아이디에 해당하는 브랜치에 Pull Request(이하 PR)를 통해 과제를 제출한다.
-
-## 과제 제출 과정
-* [과제 제출 방법](https://github.com/next-step/nextstep-docs/tree/master/precourse)
+## 구현할 기능 목록
+* NumberMatcher : 정답과 예측치를 입력하면 strike, ball, nothing에 대한 정보를 반환하는 기능
+* NumberValidator : 사용자가 입력한 숫자가 채점에 유효한 숫자인지를 판단해주는 기능
+* NumberGenerator : 랜덤으로 숫자를 생성하는 기능
