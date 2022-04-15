@@ -14,6 +14,11 @@ public class GameController {
     final private NumberGenerator numberGenerator;
     final private GameView gameView;
 
+    /**
+     * 게임 컨트롤러 생성자
+     *
+     * @param gameControllerBuilder 게임 컨트롤러 생성 빌더
+     */
     public GameController(GameControllerBuilder gameControllerBuilder) {
         this.numberMatcher = gameControllerBuilder.numberMatcher;
         this.numberValidator = gameControllerBuilder.numberValidator;
@@ -21,12 +26,20 @@ public class GameController {
         this.gameView = gameControllerBuilder.gameView;
     }
 
+    /**
+     * 게임 컨트롤러 실행 함수
+     */
     public void run() {
         do {
             play(numberGenerator.getRandomNumber());
         } while (!CommandType.EXIT.equals(CommandType.parse(gameView.queryContinue())));
     }
 
+    /**
+     * 게임 진행 함수
+     *
+     * @param randomNumber 게임에서 사용할 랜덤 값
+     */
     public void play(Integer randomNumber) {
         NumberMatchResult numberMatchResult;
         do {
