@@ -15,11 +15,11 @@ public class GameController {
     final private GameView gameView;
 
     /**
-     * 게임 컨트롤러 생성자
+     * 게임 컨트롤러 내부 생성자
      *
      * @param gameControllerBuilder 게임 컨트롤러 생성 빌더
      */
-    public GameController(GameControllerBuilder gameControllerBuilder) {
+    private GameController(GameControllerBuilder gameControllerBuilder) {
         this.numberMatcher = gameControllerBuilder.numberMatcher;
         this.numberValidator = gameControllerBuilder.numberValidator;
         this.numberGenerator = gameControllerBuilder.numberGenerator;
